@@ -1,0 +1,54 @@
+.cards {
+  *zoom: 1;
+
+  &::after,
+  &::before {
+    display: table;
+    content: '';
+  }
+
+  &::after {
+    clear: both;
+  }
+
+  &.handed {
+    position: absolute;
+    bottom: 0;
+
+    .card {
+      position: relative;
+      margin: 0 -1rem;
+      z-index: 3;
+
+      &:last-of-type {
+        z-index: 1;
+      }
+
+      &:nth-of-type(2) {
+        z-index: 2;
+      }
+
+      &:hover {
+        margin-top: -1rem;
+        z-index: 4;
+      }
+    }
+  }
+}
+
+.card {
+  float: left;
+  transition: 0.25s all;
+
+  + .card {
+    margin-left: 1rem;
+  }
+
+  &:hover {
+    transform: scale(1.125);
+  }
+
+  img {
+    width: 125px;
+  }
+}

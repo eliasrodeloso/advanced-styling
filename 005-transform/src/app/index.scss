@@ -1,0 +1,253 @@
+/**
+ *  Do not remove the comment below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+html {
+  font-family: 'Helvetica Light', sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+/**
+ *  Do not remove the comment below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
+
+.cool-fan-system {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  perspective: 1500px;
+}
+
+.switch {
+  height: 57px;
+  margin: 23px auto;
+  position: relative;
+  width: 127px;
+  z-index: 2;
+
+  label {
+    background: #e9513a;
+    color: #c72f18;
+    border-radius: 2px;
+    display: block;
+    height: 100%;
+    position: relative;
+    transition: all 0.15s ease;
+    width: 100%;
+
+    div {
+      background: #fff;
+      border-radius: 2px;
+      display: block;
+      height: 45px;
+      left: 6px;
+      position: absolute;
+      top: 6px;
+      transition: all 0.15s ease;
+      width: 53px;
+      z-index: 3;
+
+      &:before {
+        background: #d3d3d3;
+        bottom: 0;
+        box-shadow: -6px 0 0 0 #d3d3d3, 6px 0 0 0 #d3d3d3;
+        content: '';
+        display: block;
+        height: 15px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: all 0.15s ease;
+        width: 3px;
+      }
+    }
+  }
+}
+
+.switch .switch-on {
+  left: 20px;
+}
+
+.switch .switch-off {
+  left: 51px;
+}
+
+/* Checked States */
+.switch:hover {
+  label {
+    background: #2fca6c;
+    color: #13ad4f;
+  }
+
+  div {
+    left: 67px;
+  }
+
+  ~ .moving-space {
+    .moving-guy {
+      animation-name: move-the-guy;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  ~ .fan-wrapper .fan {
+    animation-name: rotate-the-fan;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+  }
+}
+
+.fan {
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 65px;
+    height: 65px;
+    margin-top: -32.5px;
+    margin-left: -32.5px;
+    border-radius: 50%;
+    background-color: black;
+  }
+
+  &-wrapper {
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+
+    &.left {
+      top: 175px;
+      left: 10%;
+      transform: rotateY(90deg);
+    }
+
+    &.right {
+      top: 175px;
+      right: 10px;
+      transform: rotateY(-90deg);
+    }
+
+    &.bottom {
+      bottom: -25px;
+      right: 200px;
+      transform: rotateX(85deg);
+    }
+  }
+
+  .ceiling {
+    display: inline-block;
+    width: 145px;
+    height: 20px;
+    background-color: #ccc;
+    position: absolute;
+    margin-top: -10px;
+    top: 50%;
+    left: 50%;
+
+    &.fourty-five {
+      transform: translateY(-52.5px) translateX(-22.5px) rotate(-45deg);
+    }
+
+    &.ninety {
+      transform: translate(-72.5px, -72.5px) rotate(-90deg);
+    }
+
+    &.houndred {
+      &-thirty-five {
+        transform: rotate(-135deg) translateX(122.5px) translateY(-52.5px);
+      }
+
+      &-eighty {
+        transform: translateX(-145px);
+      }
+    }
+
+    &.two-houndred {
+      &-seventy {
+        transform: translateX(-72.5px) translateY(72.5px) rotate(90deg);
+      }
+
+      &-twenty-five {
+        transform: rotate(135deg) translateX(122.5px) translateY(52.5px);
+      }
+    }
+
+    &.three-houndred-fifteen {
+      transform: rotate(45deg) translateX(22.5px) translateY(52.5px);
+    }
+  }
+}
+
+.moving-space {
+  display: inline-block;
+  position: relative;
+  width: 1000px;
+  height: 400px;
+  left: 30%;
+
+  .moving-guy {
+    width: 300px;
+    position: absolute;
+    bottom: 1%;
+  }
+
+  .moving-line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@keyframes move-the-guy {
+  0% {
+    transform: translate(0px);
+  }
+
+  65% {
+    transform: translateX(550px);
+  }
+
+  70% {
+    transform: translate(550px, -150px) rotate(45deg);
+  }
+
+  85% {
+    transform: translate(200px, -300px) rotate(180deg);
+  }
+
+  100% {
+    transform: translate(0px) rotate(360deg);
+  }
+}
+
+@keyframes rotate-the-fan {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

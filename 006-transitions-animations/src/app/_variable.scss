@@ -1,0 +1,91 @@
+/* Colors */
+$black: #000000;
+$black-op4: rgba(0, 0, 0, 0.4);
+$black-op1: rgba(0, 0, 0, 0.1);
+$dark-gray: #333333;
+$medium-gray: rgba(255, 255, 255, 0.2);
+$light-gray: rgba(255, 255, 255, 0.5);
+$dark-white: rgba(255, 255, 255, 0.8);
+$light-white: #fafafa;
+$white: #ffffff;
+$transparent: rgba(255, 255, 255, 0);
+$red: #941709;
+$light-blue: #6fbfff;
+$iris-blue: #208ab4;
+$dark-blue: #4381b2;
+$blue: #12475f;
+
+/* ADD header top animation from 0 to 200px*/
+
+/* Animation for the header */
+
+@keyframes drop-the-header {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+/* ADD container left animation from -1000 to 0*/
+
+@keyframes slide-the-container {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+/* ADD btn opacity animation from 0 to 1*/
+
+@keyframes showTheButton {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateTheButton {
+  from {
+    transform: rotateY(0);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* ADD move-eyes should be a transform animation make the eyes move
+starting from center to bottom left to center to top right */
+
+@keyframes moveTheIris {
+  0% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(50%, -50%);
+  }
+
+  50% {
+    transform: translate(0);
+  }
+
+  75% {
+    transform: translate(-50%, 50%);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}

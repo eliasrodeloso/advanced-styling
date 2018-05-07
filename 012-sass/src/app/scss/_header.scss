@@ -1,0 +1,27 @@
+/*
+* header.scss
+*/
+
+.header {
+  img {
+    width: 250px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    display: inline-block;
+    position: relative;
+    a {
+      display: block;
+      padding: 0 10px;
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+}

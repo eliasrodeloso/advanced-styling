@@ -1,0 +1,12 @@
+.background-header {
+  @include animation(fade 15s ease infinite);
+}
+
+.general-gradient {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.85) 12%,
+    rgba(0, 0, 0, 0.5) 68%,
+    rgba(0, 0, 0, 0) 87%
+  );
+}

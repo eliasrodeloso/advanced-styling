@@ -1,0 +1,102 @@
+/* counter reset */
+body {
+  counter-reset: romans basic subsection-counter section-counter user-selection
+    user-increment;
+}
+
+/* box counter:  roman-number */
+.box {
+  counter-increment: romans;
+
+  &::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    width: 40px;
+    height: 40px;
+    background-color: $red;
+    color: $white;
+    content: counter(romans, upper-roman);
+  }
+}
+
+/* basic counter */
+
+.page {
+  counter-increment: basic;
+
+  &::after {
+    content: counter(basic);
+  }
+}
+
+/* multiple counters */
+
+.section {
+  counter-increment: section-counter;
+
+  &::before {
+    content: 'SECTION ' counter(section-counter)':';
+  }
+}
+
+.subsection {
+  counter-increment: subsection-counter section-container;
+
+  &::after {
+    content: counter(subsection-counter, lower-alpha);
+  }
+}
+
+/* counting user selection */
+
+.choose:checked {
+  counter-increment: user-selection;
+}
+
+.total {
+  &:after {
+    content: ' ' counter(user-selection);
+  }
+}
+
+/* controlling increment */
+
+#a:checked {
+  counter-increment: user-increment 12;
+}
+
+#b:checked {
+  counter-increment: user-increment -67;
+}
+
+#c:checked {
+  counter-increment: user-increment 9;
+}
+
+#d:checked {
+  counter-increment: user-increment 100;
+}
+
+#e:checked {
+  counter-increment: user-increment 8;
+}
+
+#f:checked {
+  counter-increment: user-increment 11;
+}
+
+#g:checked {
+  counter-increment: user-increment -1;
+}
+
+#h:checked {
+  counter-increment: user-increment 90;
+}
+
+.total-sum {
+  &:after {
+    content: counter(user-increment);
+  }
+}

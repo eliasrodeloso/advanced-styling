@@ -1,0 +1,17 @@
+input {
+  /* Chrome/Opera/Safari */
+  &::-webkit-input-placeholder {
+    color: pink;
+  }
+
+  /* Firefox 19+ */
+  &::-moz-placeholder {
+    color: blue;
+  }
+  
+  /* IE 10+ */
+  &::-ms-placholder {
+    color: green;
+  }
+}
+

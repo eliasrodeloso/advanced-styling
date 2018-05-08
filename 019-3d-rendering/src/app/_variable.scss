@@ -1,0 +1,48 @@
+/* Colors */
+$black: #000000;
+$black-op4: rgba(0, 0, 0, 0.4);
+$black-op1: rgba(0, 0, 0, 0.1);
+$dark-gray: #333333;
+$light-gray: #aaaaaa;
+$light-white: #fafafa;
+$white: #ffffff;
+$transparent: rgba(255, 255, 255, 0);
+
+/* Create the rotation logic */
+
+@keyframes spinCube {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  10% {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+  20% {
+    transform: rotate3d(1, 1, 0, 180deg);
+  }
+  30% {
+    transform: rotate3d(1, 1, 0, 270deg);
+  }
+  40% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 0, 450deg);
+  }
+  60% {
+    transform: rotate3d(0, 0, 0, 360deg);
+  }
+  70% {
+    transform: rotate3d(1, 0, 0, 270deg);
+  }
+  80% {
+    transform: rotate3d(1, 1, 0, 180deg);
+  }
+  90% {
+    transform: rotate3d(1, 1, 0, 90deg);
+  }
+
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}

@@ -5,8 +5,7 @@
 // bower:scss
 // endbower
 
-
-@import "variable";
+@import 'variable';
 
 html {
   box-sizing: border-box;
@@ -18,10 +17,18 @@ body {
   background-color: #ccc;
   line-height: 1.4;
   margin: 30px 50px !important;
+
+  * {
+    box-sizing: content-box;
+    &::after,
+    &::before {
+      box-sizing: content-box;
+    }
+  }
 }
 
 /* Footer */
-footer{
+footer {
   background-color: $dark;
   color: $light;
   margin-top: 2em;
@@ -35,5 +42,3 @@ footer{
  */
 // injector
 // endinjector
-
-

@@ -1,0 +1,74 @@
+<mjml>
+  <mj-head>
+    <mj-title>Responsive Email Magic</mj-title>
+    <mj-preview>
+      Tutorial of the Responsive Email Magic
+    </mj-preview>
+  </mj-head>
+  <mj-body background-color="#F0FFF0">
+    <mj-section background-color="#8FBC8B">
+      <mj-column>
+        <mj-text font-family="Arial" padding="0 25px" line-height="18px" letter-spacing="5px" font-size="14px" color="#fafafa">
+          CREATING
+        </mj-text>
+        <mj-text font-family="Arial" padding="0 25px 10px 25px" line-height="24px" font-size="24px" color="#000080" font-weight="bold">
+          Responsive Email Magic
+        </mj-text>
+        <mj-image padding="0 25px" align="left" src="https://picsum.photos/50/50/?random" alt="Random" width="50px" height="50px" />
+      </mj-column>
+    </mj-section>
+    <mj-section padding-bottom="0" background-color="transparent">
+      <mj-column>
+        <mj-text font-family="Arial" color="#000080">
+          <h1>Welcome to our responsive email!!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis felis id feugiat pulvinar. Maecenas auctor interdum eros id dictum. Mauris et lacus sit amet orci dapibus interdum elementum dictum mi. Nulla aliquam justo varius mattis
+            volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum faucibus ante a varius. Fusce vitae metus nec nunc lacinia elementum et nec tortor.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="transparent">
+      <mj-column padding="0 0 10px 25px" width="20%">
+        <mj-image padding="0" src="https://picsum.photos/125/125/?random" width="125px" alt="Random" />
+      </mj-column>
+      <mj-column padding-top="0" width="80%">
+        <mj-text padding-top="0" font-family="Arial" color="#000080">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis felis id feugiat pulvinar. Maecenas auctor interdum eros id dictum. Mauris et lacus sit amet orci dapibus interdum elementum dictum mi. Nulla aliquam justo varius mattis
+        </mj-text>
+        <mj-button align="left" font-family="Arial" href="https://talosdigital.com" color="#fafafa" background-color="#8B0000">
+          Claim yours!
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="transparent">
+      <mj-column>
+        <mj-image src="https://picsum.photos/500/500/?random" alt="Random" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="transparent">
+      <mj-column>
+        <mj-text font-family="Arial" color="#000080">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis felis id feugiat pulvinar. Maecenas auctor interdum eros id dictum. Mauris et lacus sit amet orci dapibus interdum elementum dictum mi. Nulla aliquam justo varius mattis
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="25px 10px 0 25px" background-color="#696969">
+      <mj-column>
+        <mj-text font-family="Arial" align="center" color="#fafafa">
+          By Elías Rodelo &copy;
+          <br><br> Bilt with
+          <3 and <a style="color: #fafafa" href="https://mjml.io">MJML</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0 25px 25px 25px" background-color="#696969">
+      <mj-group>
+        <mj-column padding="0 10px 0 0" width="50%">
+          <mj-image padding="0" src="https://picsum.photos/25/25/?random" alt="Random" width="25px" border-radius="50%" align="right" />
+        </mj-column>
+        <mj-column padding="0 0 0 10px" width="50%">
+          <mj-image padding="0" src="https://picsum.photos/25/25/?random" alt="Random" width="25px" border-radius="50%" align="left" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+  </mj-body>
+</mjml>
